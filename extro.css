@@ -1,0 +1,246 @@
+.product {
+  font-size: clamp(22px, 3vw, 35px);
+  text-align: center;
+  border-style: solid;
+  width: 200px;
+}
+
+.product-border {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.smoke-white {
+  background-color: whitesmoke;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.crypto-images {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  display: block;
+}
+
+.crypto-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 15px;
+}
+
+.last-header {
+  font-size: clamp(26px, 4vw, 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.last-text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.last-text {
+  word-wrap: break-word;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.7;
+  color: rgb(80, 78, 78);
+  font-size: clamp(16px, 1.8vw, 20px);
+}
+
+.twitter-icon {
+  width: 28px;
+  background-color: white;
+}
+
+.phone-icon, .mail-icon {
+  width: 40px;
+}
+
+.dark-background {
+  background-color: #1D1D1D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  padding: 60px 20px;
+  gap: 30px;
+}
+
+.white-border-header {
+  border: 1px solid whitesmoke;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 8px;
+}
+
+.find {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.social-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-grid img {
+  width: 28px;
+  border-radius: 20%;
+}
+
+.phone-mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.call, .mail {
+  display: inline-block;
+  white-space: normal;
+  word-spacing: normal;
+  line-height: 1.4;
+  font-size: 13px;
+  max-width: 120px;
+}
+
+.last-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.horizontal-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.vertical-grid-one, .vertical-grid-two, .vertical-grid-three, .vertical-grid-four {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  min-width: 120px;
+}
+
+.newsletter-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.input {
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  width: 200px;
+  font-size: 14px;
+}
+
+.Subscribe-btn {
+  height: 40px;
+  width: 130px;
+  border-radius: 20px;
+  background-color: #89be2b;
+  border: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.Subscribe-btn:hover {
+  background-color: #FC561b;
+  cursor: pointer;
+  color: white;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+  .white-border-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .phone-mail {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+
+  .newsletter-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .Subscribe-btn {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .horizontal-grid {
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.curved-sides-header {
+  background-color: rgb(244, 240, 240);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 90%;
+  max-width: 1200px;
+  position: fixed;
+  transition: opacity 0.4s ease, top 0.4s ease;
+  opacity: 1;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.curved-sides-header.hide {
+  opacity: 0;
+  top: -100px;
+  pointer-events: none;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.IGhub-logo {
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.get-started-btn {
+  border: none;
+  width: 130px;
+  height: 44px;
+  border-radius: 75px;
+  background-color: #89BE2B;
+  color: white;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s ease-out;
+  white-space: nowrap;
+}
+
+.get-started-btn:hover {
+  background-color: #FC561B;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 8px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.container-img {
+  background-image: linear-gradient(rgba(36, 36, 36, 0.5), rgba(244, 244, 244, 0.9)),
+    url(images/f721c36d-0932-4bcc-9489-35c4f5f3f9c7.png);
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(244, 240, 240);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 15px 20px;
+    z-index: 1000;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .get-started-btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .curved-sides-header {
+    border-radius: 20px;
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    transform: none;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .IGhub-logo {
+    width: 70px;
+  }
+
+  .curved-sides-header {
+    padding: 8px 14px;
+  }
+}
